@@ -108,15 +108,16 @@
       <!-- C O N T E N I D O -->
       <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
-          <div class="content-wrapper pb-0">
-            <div class="row">
-
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title">Venta</h3>
+            </div>
+          <div class="row">
               <div class="col-lg-3  stretch-card grid-margin">
                   <div class="card">
                     <div class="card-body">
                       <div class="d-flex">
                         <div class="hexagon">
-                        <!-- <div type="button" class="hexagon" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
                           <div class="hex-mid hexagon-primary">
                             <i class="mdi mdi-water"></i>
                           </div>
@@ -181,7 +182,6 @@
                           <h6 class="text-muted">Garrafón de $9</h6>
                         </div>
                       </div>
-              
                     </div>
                   </div>
                 </div>
@@ -190,16 +190,10 @@
                   <div class="card">
                     <div class="card-body">
                       <h4 class="card-title">Ventas del día</h4>
-                      </p>
-
                       <div class="page-header flex-wrap">
-                        <div class="header-left">
-                          
-                        </div>
+                        <div class="header-left"></div>
                         <div class="header-right d-flex flex-wrap mt-md-2 mt-lg-0">
-                          <div class="d-flex align-items-center">
-                            
-                          </div>
+                          <div class="d-flex align-items-center"></div>
                           <button type="button" class="btn btn-primary mt-2 mt-sm-0 btn-icon-text" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="mdi mdi-plus-circle"></i> Agregar venta </button>
                         </div>
@@ -249,15 +243,69 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Venta de garrafón</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  ...
-                </div>
+                  
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label>Producto</label>
+                      <select class="form-control form-control-sm" style="width: 100%;">
+                        <option value="">Garrafón 15</option>
+                        <option value="">Garrafón 14</option>
+                        <option value="">Garrafón 13</option>
+                        <option value="">Garrafón 9</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">cantidad</label>
+                      <input type="number" class="form-control form-control-sm" id="" placeholder="Cantidad" />
+                    </div>
+                    <div class="form-group">
+                      <label>Responsable</label>
+                      <select class="form-control form-control-sm" style="width: 100%;">
+                        <option value="">Edgardo Juárez</option>
+                        <option value="">Vendedor 2</option>
+                        <option value="">Vendedor 3</option>
+                      </select>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-3"><h5>Total: </h5></div>
+                      <div class="col-md-5">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <input type="text" disabled class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)" value="100">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-3"><h5>Pagó: </h5></div>
+                      <div class="col-md-5">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4"></div>
+                      <div class="col-md-3"><h5>su cambio: </h5></div>
+                      <div class="col-md-5">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">$</span>
+                          <input type="text" disabled class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)" value="100">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                  </form>
                 </div>
               </div>
             </div>
