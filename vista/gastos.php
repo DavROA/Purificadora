@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Plus Admin</title>
+    <title>Purificadora</title>
     <!-- css -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -12,10 +12,12 @@
 
     <link rel="stylesheet" href="assets/vendors/jquery-bar-rating/css-stars.css" />
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
- 
+    <link rel="stylesheet" href="assets/vendors/select2/select2.min.css" />
+    <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css" />
+
     <link rel="stylesheet" href="assets/css/demo_2/style.css" />
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="assets/images/gota.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -108,25 +110,130 @@
       <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper pb-0">
-
-            <!-- Fondo blanco -->
+          <div class="page-header">
+              <h3 class="page-title">Gastos</h3>
+            </div>
             <div class="row">
               <div class="col-sm-12 stretch-card grid-margin">
                 <div class="card">
+                <form >
                   <div class="row">
-                    <div class="col-md-4">
-                      <div class="card border-0">
-                        <div class="card-body">
-                          <!-- Contenido dentro del espacio en blanco -->
-                            <h1> Esto es Gastos</h1>
+                      <div class="col-md-3">
+                        <div class="card border-0">
+                          <div class="card-body">
+                          <div class="form-group row">
+                              <label>Tipo de gasto</label>
+                                <select class="form-control form-control-sm" style="width: 100%;">
+                                  <option value="">Pipa de Agua</option>
+                                  <option value="">Gasolina</option>
+                                  <option value="">Piso</option>
+                                  <option value="">Digar</option>
+                                  <option value="">Otros</option>
+                        
+                                </select>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card border-0">
+                          <div class="card-body">
+                          <div class="form-group">
+                          <label for="exampleInputUsername1">Descripción</label>
+                          <input type="text" class="form-control form-control-sm" id="exampleInputUsername1" placeholder="Descripción" />
+                        </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="form-group">
+                            <label for="exampleInputUsername1">Monto del gasto</label>
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text bg-primary text-white">$</span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)" />
+                                <div class="input-group-append">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card border-0">
+                          <div class="card-body">
+                          <div class="form-group row">
+                              <label>Encargado</label>
+                                <select class="form-control form-control-sm" style="width: 100%;">
+                                  <option value="">Edgardo Juárez</option>
+                                  <option value="">otros</option>
+                        
+                                </select>
+                            </div>                      
+                            <button type="button" class="btn btn-primary btn-fw"> Guardar </button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  </form> 
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Gastos del día</h4>
+                      </p>
+
+                      <div class="page-header flex-wrap">
+                        <div class="header-left">
+                          
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="table-responsive">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th>Id</th>
+                              <th>Tipo de Gasto</th>
+                              <th>Descripción</th>
+                              <th>Costo del gasto</th>
+                              <th>Encargado</th>
+                              <th>Fecha y hora</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>G01</td>
+                              <td>Pipa de agua</td>
+                              <td class="text-success"> Compra de pipa de agua de 10 mil litros.</td>
+                              <td>$1000</td>
+                              <td>Edgardo Juárez Vásquez</td>
+                              <td class="text-success"> 11:11:00 hrs, 13-enero-2024 </td>
+                            </tr>
+                            <tr>
+                              <td>G02</td>
+                              <td>Otros</td>
+                              <td class="text-success"> Compostura de camioneta.</td>
+                              <td>$1000</td>
+                              <td>Edgardo Juárez Vásquez</td>
+                              <td class="text-success"> 11:11:00 hrs, 13-enero-2024 </td>
+                            </tr>                          
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
-            <!-- Termina el fondo blanco -->
           </div>
 
           <footer class="footer">
@@ -141,6 +248,7 @@
     </div>
 
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/select2/select2.min.js"></script>
 
     <script src="assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
     <script src="assets/vendors/chart.js/Chart.min.js"></script>
@@ -156,6 +264,7 @@
     <script src="assets/js/misc.js"></script>
     <script src="assets/js/settings.js"></script>
     <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/select2.js"></script>
 
     <script src="assets/js/dashboard.js"></script>
 
